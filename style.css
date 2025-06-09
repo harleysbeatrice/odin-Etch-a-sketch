@@ -1,0 +1,44 @@
+
+.grid-container {
+    border: 3px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 90vh;
+    aspect-ratio: 1 / 1;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex: 1 1 0;
+    width: 100%;
+}
+
+.pix {
+    border: 1px solid black;
+    flex: 1 1 0;
+    aspect-ratio: 1 / 1; /* Ensures each cell is square */
+    box-sizing: border-box;
+}
+
+.heading {
+    display:flex;
+    flex-basis: 400px;
+    align-items:center;
+}
+
+h1 {
+    margin-right:auto;
+    margin-left:200px;
+}
+
+button {
+    margin-right:200px;
+    flex-basis:100px;
+    height:60px;
+    border: 1px solid rgb(0, 0, 0/ 100%);
+    border-radius:15px;
+}
