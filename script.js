@@ -37,8 +37,15 @@ function createNewBoard(inDim) {
     };
 };
 
-const btn = document.querySelector("button");
-btn.addEventListener("click", () => createNewBoard(prompt("Set new diemnsion (single number smaller then or equal to 100)")));
+const btnNew = document.querySelector(".new-grid");
+btnNew.addEventListener("click", () => createNewBoard(prompt("Set new diemnsion (single number smaller then or equal to 100)")));
+
+const btnClr = document.querySelector(".clear");
+btnClr.addEventListener("click", () => {
+    let pixels = document.querySelectorAll(".pix");
+    pixels.forEach(pix => pix.style.background = "");
+    pixels.forEach(pix => pix.style.opacity = "");
+});
 
 const initialDimension = 16; 
 createNewBoard(initialDimension);

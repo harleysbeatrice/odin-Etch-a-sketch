@@ -35,10 +35,18 @@ h1 {
     margin-left:200px;
 }
 
-button {
+.new-grid {
     margin-right:200px;
     flex-basis:100px;
     height:60px;
+    border: 1px solid rgb(0, 0, 0/ 100%);
+    border-radius:15px;
+}
+
+.clear {
+    margin-right:30px;
+    flex-basis:100px;
+    height:30px;
     border: 1px solid rgb(0, 0, 0/ 100%);
     border-radius:15px;
 }
